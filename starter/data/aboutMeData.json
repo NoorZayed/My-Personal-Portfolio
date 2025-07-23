@@ -1,0 +1,63 @@
+{
+  "name": "Noor Zayed",
+  "title": "Computer Science Graduate",
+  "contact": {
+    "email": "noorzayed204@gmail.com",
+    "phone": "+970 598132302",
+    "linkedin": "https://www.linkedin.com/in/noor-zayed-3a165b302/",
+    "github": "https://github.com/NoorZayed",
+    "location": "Palestine"
+  },
+  "aboutMe": "Fresh Computer Science graduate with broad academic knowledge in software development, algorithms, databases, and system design. Gained practical experience in quality assurance, front-end development, and user-centered design (HCI) through university projects and a Front-End Nanodegree. Eager to contribute and grow within diverse areas in the tech field.",
+  "education": {
+    "degree": "Bachelor of Science in Computer Science",
+    "university": "Birzeit University",
+    "graduation_year": 2025,
+    "notable_courses": [
+      "Software Testing and Quality Assurance (QA)",
+      "HCI (Human-Computer Interaction)",
+      "Data Structures",
+      "Algorithms",
+      "Operating Systems",
+      "Web Programming",
+      "Mobile App Development",
+      "IOT"
+    ]
+  },
+  "certifications": [
+    {
+      "title": "Front-End Web Developer Nanodegree",
+      "provider": "Udacity / Google Palestine",
+      "year": "2024 - 2025"
+    }
+  ],
+  "skills": {
+    "programming_languages": ["Java", "Python", "C", "JavaScript", "TypeScript"],
+    "web_technologies": ["HTML", "CSS", "SCSS", "React", "Angular", "Firebase"],
+    "qa_testing": ["Selenium", "JUnit", "Postman", "JMeter", "Jira"],
+    "tools_and_platforms": ["Git", "GitHub", "Linux", "MySQL", "VS Code", "Firebase"],
+    "soft_skills": ["Problem Solving", "Teamwork", "Communication", "Adaptability"]
+  },
+  "experience": [
+    {
+      "role": "Frontend Intern",
+      "company": "iConnect (Training)",
+      "duration": "Jul – Sep 2024",
+      "responsibilities": [
+        "Built and styled frontend components using Angular and Bootstrap.",
+        "Collaborated with back-end team and tested APIs using Postman.",
+        "Applied responsive design and user-centered interface principles."
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Arabic",
+      "proficiency": "Native"
+    },
+    {
+      "language": "English",
+      "proficiency": "Good"
+    }
+  ]
+}
