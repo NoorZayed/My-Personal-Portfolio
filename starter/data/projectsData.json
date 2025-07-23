@@ -56,102 +56,31 @@
       "url": "https://github.com/NoorZayed/-Car-Rental-Agency"
     },
     {
-      "project_id": "project_android_rental",
-      "project_name": "Android Car Rental App",
-      "short_description": "Car rental app using Java, MySQL, and Firebase.",
-      "long_description": "Developed an Android-based auto rental application that integrates with MySQL and Firebase. Implemented user authentication, booking administration, and vehicle tracking.",
-      "card_image": "../images/game_dev_card.webp",
-      "spotlight_image": "../images/social_media_spotlight.webp",
-      "url": "https://github.com/NoorZayed/Auto-Cargo-rental-system"
-    },
-  {
-    "project_id": "project_personal",
-    "project_name": "Personal Website",
-    "short_description": "Showcase your skills and projects.",
-    "long_description": "Build a website to highlight your programming abilities, experience, and portfolio. This is a great way to showcase your work to potential employers.",
-    "card_image": "../images/personal_site_card.webp",
-    "spotlight_image": "../images/personal_site_spotlight.webp",
-    "url": "https://example.com/project1"
+    "project_id": "project_study_night",
+    "project_name": "Study Night – Testing & Optimization",
+    "short_description": "QA optimization and testing of a flashcard app using Mocha, Cypress, Gulp, and Parcel.",
+    "long_description": "A front-end optimization and testing project for a flashcard app called Study Night. Implemented unit tests with Mocha and Chai, end-to-end tests using Cypress, and automated workflows with Gulp. Used Parcel to build and optimize static assets, improving performance and maintainability.",
+    "card_image": "../images/study_night.jpg",
+    "spotlight_image": "../images/study_night.jpg",
+    "url": "https://github.com/NoorZayed/study-night-cleaned-AND-Testing"
   },
   {
-    "project_id": "project_todo",
-    "project_name": "To-Do List App",
-    "short_description": "Organize your tasks efficiently.",
-    "long_description": "Create a web or mobile app to help users manage their tasks, set deadlines, and prioritize their workload. This project is a good introduction to frontend development and basic backend logic.",
-
-    "spotlight_image": "../images/todo_spotlight.webp",
-    "url": "https://example.com/project2"
+    "project_id": "project_happiness_viz",
+    "project_name": "Global Happiness Score Visualization",
+    "short_description": "Data analysis and visualization of global happiness scores using Python and pandas.",
+    "long_description": "Analyzed happiness data across years and regions using pandas and matplotlib. Created plots to highlight trends, outliers, and forecasts in global happiness scores. Identified top and bottom scoring regions and predicted changes for the next two years.",
+    "card_image": "../images/happiness_score.jpg",
+    "spotlight_image": "../images/happiness_score.jpg",
+    "url": "https://github.com/NoorZayed/happiness-score-visualization"
   },
   {
-    "project_id": "project_calculator",
-    "project_name": "Simple Calculator",
-    "short_description": "Build a basic calculator.",
-    "long_description": "Develop a web-based or mobile calculator that can perform basic arithmetic operations. This project is a good starting point for learning fundamental programming concepts and user interface design.",
-    "card_image": "../images/calculator_card.webp",
-
-    "url": "https://example.com/project3"
-  },
-  {
-    "project_id": "project_store",
-    "project_name": "E-commerce Store",
-
-    "long_description": "Build a simple e-commerce website or app to sell products. This project involves frontend development, backend logic, and potentially database integration.",
-    "card_image": "../images/commerce_card.webp",
-    "spotlight_image": "../images/commerce_spotlight.webp",
-    "url": "https://example.com/project4"
-  },
-  {
-    "project_id": "project_weather",
-    "project_name": "Weather App",
-    "short_description": "Get real-time weather updates.",
-
-    "card_image": "../images/weather_app_card.webp",
-    "spotlight_image": "../images/weather_app_spotlight.webp",
-    "url": "https://example.com/project5"
-  },
-  {
-    "project_id": "project_blog",
-    "project_name": "Personal Blog",
-    "short_description": "Share your thoughts and ideas.",
-    "long_description": "Create a blog to express your opinions, share your knowledge, or document your experiences. This is a great way to build an online presence and connect with others.",
-    "card_image": "../images/blog_card.webp",
-    "spotlight_image": "../images/blog_spotlight.webp"
-
-  },
-  {
-    "project_id": "project_game",
-    "project_name": "Game Development",
-    "short_description": "Create your own games.",
-    "long_description": "Explore game development by creating simple games using frameworks like Unity or Godot. This is a fun and challenging way to learn about game design, programming, and art.",
-    "card_image": "../images/game_dev_card.webp",
-    "spotlight_image": "../images/game_dev_spotlight.webp",
-    "url": "https://example.com/project7"
-  },
-  {
-    "project_id": "project_social",
-    "project_name": "Social Media App",
-    "short_description": "Connect with friends and family.",
-    "long_description": "Build a social media platform where users can create profiles, share content, and interact with others. This project can involve frontend development, backend logic, and database management.",
-    "card_image": "../images/social_media_card.webp",
-    "spotlight_image": "../images/social_media_spotlight.webp",
-    "url": "https://example.com/project8"
-  },
-  {
-    "project_id": "project_music",
-    "project_name": "Music Player",
-    "short_description": "Create a music streaming app.",
-    "long_description": "Develop a music player or streaming app that allows users to listen to music, create playlists, and discover new artists. This project can involve working with APIs and media playback technologies.",
-    "card_image": "../images/music_app_card.webp",
-    "spotlight_image": "../images/music_app_spotlight.webp",
-    "url": "https://example.com/project9"
-  },
-  {
-    "project_id": "project_fitness",
-    "project_name": "Fitness Tracker",
-    "short_description": "Track your workouts and progress.",
-    "long_description": "Build a fitness tracking app to help users monitor their workouts, set goals, and track their progress. This project can involve data collection, analysis, and visualization.",
-    "card_image": "../images/fitness_card.webp",
-    "spotlight_image": "../images/fitness_spotlight.webp",
-    "url": "https://example.com/project10"
+    "project_id": "project_online_retail",
+    "project_name": "Online Retail II – Data Wrangling & Recommendation",
+    "short_description": "Analyzed UK retail data to generate customer insights and item pairing recommendations.",
+    "long_description": "Performed data cleaning, aggregation, and customer behavior analysis on UCI’s Online Retail II dataset. Computed top-selling products, high-revenue customers, and generated item-pair promotions combining top and bottom sellers to optimize marketing strategy.",
+    "card_image": "../images/online_retail.jpg",
+    "spotlight_image": "../images/online_retail.jpg",
+    "url": "https://github.com/NoorZayed/Online-Retail-Data-Wrangling"
   }
+  
 ]

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadAboutData();
   loadProjectsData();
   setupProjectNav();
-  setupFormValidation();
+  // setupFormValidation(); // Disabled - using Formspree now
 });
 
 function loadAboutData() {
@@ -60,10 +60,10 @@ function populateAboutMe(data) {
   
   // Create image
   const img = document.createElement('img');
-  img.src = data.headshot ? data.headshot.replace('..', './starter/images') : './starter/images/me.jpg';
+  img.src = data.headshot ? data.headshot.replace('..', './starter/images') : './starter/images/me.png';
   img.alt = 'Profile headshot';
   img.onerror = () => {
-    img.src = './starter/images/me.jpg';
+    img.src = './starter/images/me.png';
   };
   
   headshotContainer.appendChild(img);
@@ -336,6 +336,16 @@ function loadProjectsData() {
       }
       // Spotlight update function
       function setSpotlight(project) {
+        // Remove 'selected' class from all project cards
+        const allCards = document.querySelectorAll('.projectCard');
+        allCards.forEach(card => card.classList.remove('selected'));
+        
+        // Add 'selected' class to the current project card
+        const currentCard = document.getElementById(project.project_id);
+        if (currentCard) {
+          currentCard.classList.add('selected');
+        }
+        
         // Clear and update content
         spotlightTitles.innerHTML = '';
         const h3 = document.createElement('h3');
@@ -377,7 +387,8 @@ function setupFormValidation() {
   if (!form || !emailInput || !messageInput || !emailError || !messageError || !charCount) return;
   // Regex
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const illegalRegex = /[^a-zA-Z0-9@._-]/;
+  const emailIllegalRegex = /[^a-zA-Z0-9@._-]/;
+  const messageIllegalRegex = /[<>]/; // Only block potentially dangerous characters
   // Live character count
   messageInput.addEventListener('input', () => {
     const len = messageInput.value.length;
@@ -402,7 +413,7 @@ function setupFormValidation() {
     } else if (!emailRegex.test(email)) {
       emailError.textContent = 'Please enter a valid email address.';
       valid = false;
-    } else if (illegalRegex.test(email)) {
+    } else if (emailIllegalRegex.test(email)) {
       emailError.textContent = 'Email contains illegal characters.';
       valid = false;
     }
@@ -410,8 +421,8 @@ function setupFormValidation() {
     if (!message) {
       messageError.textContent = 'Message is required.';
       valid = false;
-    } else if (illegalRegex.test(message)) {
-      messageError.textContent = 'Message contains illegal characters.';
+    } else if (messageIllegalRegex.test(message)) {
+      messageError.textContent = 'Message contains potentially harmful characters.';
       valid = false;
     } else if (message.length > 300) {
       messageError.textContent = 'Message must be 300 characters or less.';
@@ -421,10 +432,46 @@ function setupFormValidation() {
       e.preventDefault();
       return;
     }
-    alert('Form submitted successfully! Validation passed.');
-    form.reset();
-    charCount.textContent = 'Characters: 0/300';
-    charCount.classList.remove('error');
+    
+    // Prevent default form submission
+    e.preventDefault();
+    
+    // Show loading state
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+    
+    // Send email using fetch to PHP backend
+    fetch('./send-email.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: email,
+        message: message
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        alert('Email sent successfully! I will get back to you soon.');
+        form.reset();
+        charCount.textContent = 'Characters: 0/300';
+        charCount.classList.remove('error');
+      } else {
+        throw new Error(data.error || 'Unknown error');
+      }
+    })
+    .catch(error => {
+      alert('Failed to send email. Please try again or contact me directly at noorzayed204@gmail.com');
+      console.error('Email sending error:', error);
+    })
+    .finally(() => {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    });
   });
 }
 

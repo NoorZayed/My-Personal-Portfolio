@@ -46,26 +46,6 @@
                 <h3>Education</h3>
                 <!-- Will be populated by JavaScript -->
             </div>
-            
-            <div id="certifications">
-                <h3>Certifications</h3>
-                <!-- Will be populated by JavaScript -->
-            </div>
-            
-            <div id="skills">
-                <h3>Skills</h3>
-                <!-- Will be populated by JavaScript -->
-            </div>
-            
-            <div id="experience">
-                <h3>Experience</h3>
-                <!-- Will be populated by JavaScript -->
-            </div>
-            
-            <div id="languages">
-                <h3>Languages</h3>
-                <!-- Will be populated by JavaScript -->
-            </div>
 
         </section>
         <section id="projectsContainer">
@@ -103,6 +83,27 @@
                 </div>
             </div>
         </section>
+        <section id="aboutMeContainer" >
+           <div id="certifications">
+                <h3>Certifications</h3>
+                <!-- Will be populated by JavaScript -->
+            </div>
+            
+            <div id="skills">
+                <h3>Skills</h3>
+                <!-- Will be populated by JavaScript -->
+            </div>
+            
+            <div id="experience">
+                <h3>Experience</h3>
+                <!-- Will be populated by JavaScript -->
+            </div>
+            
+            <div id="languages">
+                <h3>Languages</h3>
+                <!-- Will be populated by JavaScript -->
+            </div>
+             </section>
         <section id="contactContainer">
             <!-- create client-side validation to check and make sure the fields aren't empty and no illegal characters are included -->
             <!-- the email input has been set with a type of 'text' instead of 'email' in order to bypass the browser checks and use your js checks for formatting -->
@@ -113,11 +114,13 @@
             <!-- populate the emailError and messageError divs with information explaining to the user why validation failed and how to fix it -->
             <h2>Contact Me</h2>
             <p>Send me your email address and a message and I'll get back to you as soon as possible.</p>
-            <form id="formSection">
+            <form id="formSection" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="221cfac0-e1ca-4098-84ff-fff75c425929">
+                <input type="hidden" name="redirect" value="false">
                 <div class='formField'>
 
                     <label for='contactEmail'>Your email address:</label>
-                    <input id='contactEmail' name='contactEmail' type="text" />
+                    <input id='contactEmail' name='email' type="email" required />
                     <div id="emailError"></div>
 
                 </div>
@@ -126,7 +129,7 @@
                     <label for='contactMessage'>Your message:</label>
                     <div>
                         <div id="charactersLeft">Characters: 0/300</div>
-                        <textarea id='contactMessage' name="contactMessage" rows="5"></textarea>
+                        <textarea id='contactMessage' name='message' rows="5" required></textarea>
                         <div id="messageError"></div>
 
                     </div>
