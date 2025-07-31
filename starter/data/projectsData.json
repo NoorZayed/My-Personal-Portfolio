@@ -33,7 +33,7 @@
     "short_description": "Personal portfolio website built with SCSS.",
     "long_description": "A responsive personal website showcasing projects and skills. Focused on clean UI/UX and accessibility, built using HTML, SCSS, and deployed through GitHub Pages.",
     "card_image": "../images/protofliosite.png",
-    "spotlight_image": "../images/protoliosite.png",
+    "spotlight_image": "../images/protofliosite.png",
     "url": "https://github.com/NoorZayed/Portfolio-Site"
   },
   {
