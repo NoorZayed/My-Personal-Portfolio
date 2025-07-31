@@ -5,26 +5,26 @@
     "project_name": "PAL Training System",
     "short_description": "Internship and student management platform using React and Node.js.",
     "long_description": "A full-stack web application to manage student internships, roles, and company assignments. Features authentication, dynamic dashboards, and QA testing using Postman and JMeter.",
-    "card_image": "../images/pal_training.jpg",
-    "spotlight_image": "../images/pal_training.jpg",
-    "url": "https://github.com/NoorZayed/graduate-project-PALTrainingSystem"
+    "card_image": "../images/pal.png",
+    "spotlight_image": "../images/pal.png",
+    "url": "https://github.com/NoorZayed/PALTrainingSystem"
   },
   {
     "project_id": "project_qa_linkedin",
     "project_name": "LinkedIn QA Testing Project",
     "short_description": "University project for manual and automated QA testing.",
     "long_description": "Performed comprehensive software testing on LinkedIn workflows using Selenium IDE, JMeter, and Postman. Documented test cases, test plans, and executed both functional and regression tests.",
-    "card_image": "../images/qa_testing.jpg",
-    "spotlight_image": "../images/qa_testing.jpg",
-    "url": "https://github.com/NoorZayed/study-night-cleaned-AND-Testing"
+    "card_image": "../images/qa.png",
+    "spotlight_image": "../images/qa.png",
+    "url": "https://github.com/NoorZayed/QA-report"
   },
   {
     "project_id": "project_android_rental",
     "project_name": "Android Car Rental App",
     "short_description": "Car rental app using Java and Firebase.",
     "long_description": "Developed an Android app for renting vehicles with Firebase integration. Implemented user login, booking flow, and vehicle availability management.",
-    "card_image": "../images/car_rental_app.jpg",
-    "spotlight_image": "../images/car_rental_app.jpg",
+    "card_image": "../images/carm.jpeg",
+    "spotlight_image": "../images/carm.jpeg",
     "url": "https://github.com/NoorZayed/Auto-Cargo-rental-system"
   },
   {
@@ -32,8 +32,8 @@
     "project_name": "Portfolio Website",
     "short_description": "Personal portfolio website built with SCSS.",
     "long_description": "A responsive personal website showcasing projects and skills. Focused on clean UI/UX and accessibility, built using HTML, SCSS, and deployed through GitHub Pages.",
-    "card_image": "../images/portfolio.jpg",
-    "spotlight_image": "../images/portfolio.jpg",
+    "card_image": "../images/protofliosite.png",
+    "spotlight_image": "../images/protoliosite.png",
     "url": "https://github.com/NoorZayed/Portfolio-Site"
   },
   {
@@ -41,18 +41,17 @@
     "project_name": "Smart Home System - IoT",
     "short_description": "IoT simulation for home automation using JavaScript.",
     "long_description": "Designed and simulated a smart home system including lights, sensors, and automation logic. Focused on modular control structure and user interface logic.",
-    "card_image": "../images/smart_home.jpg",
-    "spotlight_image": "../images/smart_home.jpg",
+    "card_image": "../images/iot.png",
+    "spotlight_image": "../images/iot.png",
     "url": "https://github.com/NoorZayed/SmartHomeSystem-IOT"
   }
-
 ,
   { "project_id": "project_car_website",
       "project_name": "Car Rental Website",
       "short_description": "A complete car rental system using PHP and MySQL.",
       "long_description": "Developed a fully functional car rental system with a user-friendly PHP & MySQL backend. Enhanced user engagement by creating an intuitive UI using HTML and CSS.",
-      "card_image": "../images/Car_Rental_Website.jpg",
-      "spotlight_image": "../images/Car_Rental_Website.jpg",
+      "card_image": "../images/cargoweb.png",
+      "spotlight_image": "../images/cargoweb.png",
       "url": "https://github.com/NoorZayed/-Car-Rental-Agency"
     },
     {
@@ -60,8 +59,8 @@
     "project_name": "Study Night – Testing & Optimization",
     "short_description": "QA optimization and testing of a flashcard app using Mocha, Cypress, Gulp, and Parcel.",
     "long_description": "A front-end optimization and testing project for a flashcard app called Study Night. Implemented unit tests with Mocha and Chai, end-to-end tests using Cypress, and automated workflows with Gulp. Used Parcel to build and optimize static assets, improving performance and maintainability.",
-    "card_image": "../images/study_night.jpg",
-    "spotlight_image": "../images/study_night.jpg",
+    "card_image": "../images/study_night.png",
+    "spotlight_image": "../images/study_night.png",
     "url": "https://github.com/NoorZayed/study-night-cleaned-AND-Testing"
   },
   {
@@ -69,8 +68,8 @@
     "project_name": "Global Happiness Score Visualization",
     "short_description": "Data analysis and visualization of global happiness scores using Python and pandas.",
     "long_description": "Analyzed happiness data across years and regions using pandas and matplotlib. Created plots to highlight trends, outliers, and forecasts in global happiness scores. Identified top and bottom scoring regions and predicted changes for the next two years.",
-    "card_image": "../images/happiness_score.jpg",
-    "spotlight_image": "../images/happiness_score.jpg",
+    "card_image": "../images/Visualization.png",
+    "spotlight_image": "../images/Visualization.png",
     "url": "https://github.com/NoorZayed/happiness-score-visualization"
   },
   {
@@ -78,8 +77,8 @@
     "project_name": "Online Retail II – Data Wrangling & Recommendation",
     "short_description": "Analyzed UK retail data to generate customer insights and item pairing recommendations.",
     "long_description": "Performed data cleaning, aggregation, and customer behavior analysis on UCI’s Online Retail II dataset. Computed top-selling products, high-revenue customers, and generated item-pair promotions combining top and bottom sellers to optimize marketing strategy.",
-    "card_image": "../images/online_retail.jpg",
-    "spotlight_image": "../images/online_retail.jpg",
+    "card_image": "../images/aggregation.png",
+    "spotlight_image": "../images/aggregation.png",
     "url": "https://github.com/NoorZayed/Online-Retail-Data-Wrangling"
   }
   
